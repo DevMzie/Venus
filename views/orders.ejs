@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<% include ./partials/head %>
+
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="datatables-bs4/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="datatables-responsive/css/responsive.bootstrap4.min.css">
+
+  <!-- Navbar -->
+  <% include ./partials/navbar %>
+
+  <!-- Main Sidebar Container -->
+  <% include ./partials/admin-sidebar %>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>Orders</h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Orders</li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="row">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">View Orders</h3>
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body">
+              <table id="example1" class="table table-bordered table-striped">
+                <thead>
+                <tr>
+                  <th>Order ID</th>
+                  <th>Buyer Name</th>
+                  <th>Items</th>
+                  <th>Quantity</th>
+                  <th>Amount (RTGS$)</th>
+                  <th>Action</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>VNS098829</td>
+                  <td>Mzingaye Tshili
+                  </td>
+                  <td>Cotton T Shirts</td>
+                  <td>250</td>
+                  <td>4500</td>
+                  <td><a href="order-details"><button class="text-center btn btn-primary"> <i class="fa fa-folder"></i> View</button></a></td>
+                </tr>
+                <tr>
+                  <td>VNS098776</td>
+                  <td>Liberty Bote
+                  </td>
+                  <td>Caps</td>
+                  <td>150</td>
+                  <td>2700</td>
+                  <td><a href="order-details"><button class="text-center btn btn-primary"> <i class="fa fa-folder"></i> View</button></a></td>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                  <th>Order ID</th>
+                  <th>Buyer Name</th>
+                  <th>Items</th>
+                  <th>Quantity</th>
+                  <th>Amount</th>
+                  <th>Action</th>
+                </tr>
+                </tfoot>
+              </table>
+            </div>
+            <!-- /.card-body -->
+          </div>
+          <!-- /.card -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <div class="float-right d-none d-sm-block">
+      <b>Version</b> 3.0.4
+    </div>
+    <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong> All rights
+    reserved.
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- DataTables -->
+<script src="datatables/jquery.dataTables.min.js"></script>
+<script src="datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<!-- AdminLTE App -->
+<script src="js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="js/demo.js"></script>
+<!-- page script -->
+<script>
+  $(function () {
+    $("#example1").DataTable({
+      "responsive": true,
+      "autoWidth": false,
+    });
+    $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+      "responsive": true,
+    });
+  });
+</script>
+</body>
+</html>

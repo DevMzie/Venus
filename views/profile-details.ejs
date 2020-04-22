@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<% include ./partials/head %>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+  <!-- Navbar -->
+ <% include ./partials/navbar %>
+
+  <!-- Main Sidebar Container -->
+  <% include ./partials/admin-sidebar %>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>Profile</h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Supplier Profile</li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3">
+
+            <!-- Profile Image -->
+            <div class="card card-primary card-outline">
+              <div class="card-body box-profile">
+                <div class="text-center">
+                  <img class="profile-user-img img-fluid img-circle"
+                       src="img/user4-128x128.jpg"
+                       alt="User profile picture">
+                </div>
+
+                <h3 class="profile-username text-center">Seed Co.</h3>
+
+                <p class="text-muted text-center">Agronomy Specialists</p>
+
+                <!-- <ul class="list-group list-group-unbordered mb-3">
+                  <li class="list-group-item">
+                    <b>Followers</b> <a class="float-right">1,322</a>
+                  </li>
+                  <li class="list-group-item">
+                    <b>Following</b> <a class="float-right">543</a>
+                  </li>
+                  <li class="list-group-item">
+                    <b>Friends</b> <a class="float-right">13,287</a>
+                  </li>
+                </ul> -->
+
+                <!-- <a href="#" class="btn btn-primary btn-block"><b>Follow</b></a> -->
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+          <div class="col-md-9">
+            <div class="card">
+              <div class="card-header p-2">
+                <ul class="nav nav-pills">
+                  <li class="nav-item"><a class="nav-link active" href="#about" data-toggle="tab">About</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#activity" data-toggle="tab">View Prices</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#timeline" data-toggle="tab">View Products</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#settings" data-toggle="tab">Create Order</a></li>
+                </ul>
+              </div><!-- /.card-header -->
+              <div class="card-body">
+                <div class="tab-content">
+                  <div class="tab-pane" id="activity">
+                    <!-- Post -->
+                    <div class="post">
+                      <!-- Product 1: Price (Quantity) <br>
+                      Product 2: Price (Quantity) <br>
+                      Product 3: Price (Quantity) <br>   -->
+                      <div class="row">
+                        <div class="col-md-6">
+                          <!-- Widget: user widget style 2 -->
+                          <div class="card card-widget widget-user-2">
+                            <!-- Add the bg color to the header using any of the bg-* classes -->
+                            <div class="widget-user-header bg-primary">
+                              <div class="widget-user-image">
+                                <img class="img-circle elevation-2" src="img/user7-128x128.jpg" alt="User Avatar">
+                              </div>
+                              <!-- /.widget-user-image -->
+                              <h3 class="widget-user-username">Maize Seed</h3>
+                              <h5 class="widget-user-desc">Type A</h5>
+                            </div>
+                            <div class="card-footer p-0">
+                              <ul class="nav flex-column">
+                                <li class="nav-item">
+                                  <a href="#" class="nav-link">
+                                    100 by 1kg <span class="float-right text-muted">$RTGS 5000</span>
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a href="#" class="nav-link">
+                                    200 by 1kg <span class="float-right text-muted">$RTGS 8000</span>
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a href="#" class="nav-link">
+                                    500 by 1kg <span class="float-right text-muted">$RTGS 18000</span>
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a href="#" class="nav-link">
+                                    100 by 2kg <span class="float-right text-muted">$RTGS 7500</span>
+                                  </a>
+                                </li>
+                              </ul>
+                              <a href="product-detail" class="p-2" target="_blank"><button class="text-center btn btn-primary"><i class="fas fa-cart-plus"></i> View Product</button></a>
+                            </div>
+                          </div>
+                          <!-- /.widget-user -->
+                        </div>
+
+                        <div class="col-md-6">
+                          <!-- Widget: user widget style 2 -->
+                          <div class="card card-widget widget-user-2">
+                            <!-- Add the bg color to the header using any of the bg-* classes -->
+                            <div class="widget-user-header bg-primary">
+                              <div class="widget-user-image">
+                                <img class="img-circle elevation-2" src="img/user7-128x128.jpg" alt="User Avatar">
+                              </div>
+                              <!-- /.widget-user-image -->
+                              <h3 class="widget-user-username">Soya Beans</h3>
+                              <h5 class="widget-user-desc">Type B</h5>
+                            </div>
+                            <div class="card-footer p-0">
+                              <ul class="nav flex-column">
+                                <li class="nav-item">
+                                  <a href="#" class="nav-link">
+                                    100 by 1kg <span class="float-right text-muted">$RTGS 5000</span>
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a href="#" class="nav-link">
+                                    200 by 1kg <span class="float-right text-muted">$RTGS 8000</span>
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a href="#" class="nav-link">
+                                    500 by 1kg <span class="float-right text-muted">$RTGS 18000</span>
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a href="#" class="nav-link">
+                                    100 by 2kg <span class="float-right text-muted">$RTGS 7500</span>
+                                  </a>
+                                </li>
+                              </ul>
+                              <a href="product-detail" class="p-2" target="_blank"><button class="text-center btn btn-primary"><i class="fas fa-cart-plus"></i> View Product</button></a>
+                            </div>
+                          </div>
+                          <!-- /.widget-user -->
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /.post -->
+
+                  </div>
+
+                  <div class="active tab-pane" id="about">
+                    <strong><i class="fas fa-book mr-1"></i> Category</strong>
+                    <p class="text-muted">Agronomy</p><hr>
+
+                    <strong><i class="fas fa-map-marker-alt mr-1"></i> Location</strong>
+                    <p class="text-muted">Shamwari Road, Stapleford P.O.Box WGT 64 Westgate,Harare,Zimbabwe</p><hr>
+
+                    <strong><i class="fas fa-pencil-alt mr-1"></i> Products</strong>
+                    <p class="text-muted">
+                      <span class="tag tag-danger">Maize</span>
+                      <span class="tag tag-success">Wheat</span>
+                      <span class="tag tag-info">Soya</span>
+                      <span class="tag tag-warning">Cowpeas</span>
+                      <span class="tag tag-primary">Sorghum</span>
+                      <span class="tag tag-primary">Ground Nuts</span>
+                      <span class="tag tag-primary">Sugar Beans</span>
+                    </p><hr>
+
+                    <strong><i class="far fa-file-alt mr-1"></i> Notes</strong>
+                    <p class="text-muted">Some Notes about the organisation</p>
+
+                  </div>
+
+                  <div class="tab-pane" id="timeline">
+                    <div class="row mb-3">
+                      <!-- /.col -->
+                      <div class="col-sm-6">
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <img class="img-fluid mb-3" src="img/photo2.png" alt="Photo">
+                            <img class="img-fluid" src="img/photo3.jpg" alt="Photo">
+                          </div>
+                          <!-- /.col -->
+                          <div class="col-sm-6">
+                            <img class="img-fluid mb-3" src="img/photo4.jpg" alt="Photo">
+                            <img class="img-fluid" src="img/photo1.png" alt="Photo">
+                          </div>
+                          <!-- /.col -->
+                        </div>
+                        <!-- /.row -->
+                      </div>
+                      <!-- /.col -->
+                    </div>      
+                  </div>
+                  <!-- /.tab-pane -->
+
+                  <div class="tab-pane" id="settings">
+                    <form class="form-horizontal">
+                      <div class="form-group row">
+                        <label for="inputName" class="col-sm-2 col-form-label">Name</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="inputName" placeholder="Name">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-10">
+                          <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="phoneNumber" class="col-sm-2 col-form-label">Phone Number</label>
+                        <div class="col-sm-10">
+                          <input type="number" class="form-control" id=inputPhoneNumber placeholder="Phone Number">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="Product" class="col-sm-2 col-form-label">Product</label>
+                        <div class="col-sm-10">
+                          <select class="form-control select2" style="width: 100%;">
+                            <option selected="selected">Maize</option>
+                            <option>Wheat</option>
+                            <option>Soya</option>
+                            <option>Ground Nuts</option>
+                            <option>Cow Peas</option>
+                            <option>Sugar Beans</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="price" class="col-sm-2 col-form-label">Price ($RTGS)</label>
+                        <div class="col-sm-10">
+                          <input type="number" class="form-control" id=price placeholder="Price">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="paymentMethod" class="col-sm-2 col-form-label">Payment Method</label>
+                        <div class="col-sm-10">
+                          <select class="form-control select2" style="width: 100%;">
+                            <option selected="selected">Bank Transfer</option>
+                            <option>Cash Deposit</option>
+                            <option>Ecocash</option>
+                            <option>One Money</option>
+                            <option>Telecash</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <div class="offset-sm-2 col-sm-10">
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox"> I agree to the <a href="#">terms and conditions</a>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <div class="offset-sm-2 col-sm-10">
+                          <a href="#" target="_blank"><button type="submit" class="btn btn-danger">Make Payment Now</button></a>
+                          <a href="invoice" target="_blank"><button class="btn btn-primary">Get Quotation</button></a>
+                        </div>
+                      </div>
+                    </form>
+                    <a href="invoice" target="_blank"><button class="btn btn-primary">Get Quotation</button></a>
+                  </div>
+                  <!-- /.tab-pane -->
+                </div>
+                <!-- /.tab-content -->
+              </div><!-- /.card-body -->
+            </div>
+            <!-- /.nav-tabs-custom -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <% include ./partials/footer %>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="js/demo.js"></script>
+</body>
+</html>
