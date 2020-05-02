@@ -54,6 +54,10 @@ router.get('/invoice-print', (req, res, next) => {
   res.render('invoice-print', { title: 'Invoice' });
 });
 
+router.post('/invoice', (req, res, next) => {
+  res.render('invoice', { title: 'Invoice' });
+});
+
 // MISCELLANEOUS
 router.get('/calendar', (req, res, next) => {
   res.render('calendar', { title: 'Calendar' });
@@ -61,6 +65,31 @@ router.get('/calendar', (req, res, next) => {
 
 router.get('/charts', (req, res, next) => {
   res.render('charts', { title: 'Analysis' });
+});
+
+// AUTHENTICATION
+router.get('/login', (req, res, next) => {
+  res.render('login', { title: 'Login' });
+});
+
+router.get('/lockscreen', (req, res, next) => {
+  res.render('lockscreen', { title: 'Locked' });
+});
+
+router.get('/recover-password', (req, res, next) => {
+  res.render('recover-password', { title: 'Recover Password' });
+});
+
+router.get('/register', (req, res, next) => {
+  res.render('register', { title: 'Register' });
+});
+
+router.post('/login', (req, res, next) => {
+  res.render('login', { title: 'Login' });
+});
+
+router.post('/', (req, res, next) => {
+  res.render('index', { title: 'Venus' });
 });
 
 module.exports = router;
