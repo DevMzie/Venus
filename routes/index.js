@@ -33,7 +33,7 @@ router.get('/order-details', (req, res, next) => {
 });
 
 router.get('/orders-progress', (req, res, next) => {
-  res.render('orders-Progress', { title: 'Orders-Progress' });
+  res.render('orders-progress', { title: 'Orders-Progress' });
 });
 
 router.get('/add-order', (req, res, next) => {
