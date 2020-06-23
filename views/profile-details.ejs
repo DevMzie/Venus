@@ -73,7 +73,7 @@
                   <li class="nav-item"><a class="nav-link active" href="#about" data-toggle="tab">About</a></li>
                   <li class="nav-item"><a class="nav-link" href="#activity" data-toggle="tab">View Prices</a></li>
                   <li class="nav-item"><a class="nav-link" href="#timeline" data-toggle="tab">View Products</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#settings" data-toggle="tab">Create Order</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#order" data-toggle="tab">Create Order</a></li>
                 </ul>
               </div><!-- /.card-header -->
               <div class="card-body">
@@ -218,7 +218,7 @@
                   </div>
                   <!-- /.tab-pane -->
 
-                  <div class="tab-pane" id="settings">
+                  <div class="tab-pane" id="order">
                     <form class="form-horizontal" method="POST" action="invoice">
                       <div class="form-group row">
                         <label for="inputName" class="col-sm-2 col-form-label">Name</label>
@@ -252,9 +252,9 @@
                         </div>
                       </div>
                       <div class="form-group row">
-                        <label for="price" class="col-sm-2 col-form-label">Price ($RTGS)</label>
+                        <label for="price" class="col-sm-2 col-form-label">Payable Amount</label>
                         <div class="col-sm-10">
-                          <input type="number" class="form-control" id=price placeholder="Price">
+                          <input type="number" class="form-control" id=price placeholder="Payable Amount ($RTGS)">
                         </div>
                       </div>
                       <div class="form-group row">
